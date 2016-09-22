@@ -53,7 +53,7 @@
      point.onblur = function(){
       point.value = "222";
     }*/
-var textinput1 = document.getElementById("inputtext1");
+/*var textinput1 = document.getElementById("inputtext1");
 textinput1.onfocus = function (){
   textinput1.style.color ="yellow";
 }
@@ -91,8 +91,8 @@ btn22.onclick = function(){
   textinput2.style.backgroundColor="white";
   textinput3.style.backgroundColor="white";
 
-}
-var btn = document.getElementById("btn3");
+}*/
+/*var btn = document.getElementById("btn3");
  
 btn.addEventListener("click",function(){
   console.log(123);
@@ -103,15 +103,44 @@ btn.addEventListener("click",function(){
 var d1 = document.getElementById("div1");
 d1.addEventListener("click", function() {
             console.log(66666);
-
-
 });
 var btn = document.getElementById("btn3");
 btn.onclick = function(){
   console.log(789);
+
+}*/
+
+/*document.getElementById("p1").addEventListener("click",function(){
+  alert("你点击了p1");
+},false);
+document.getElementById("div1").addEventListener("click",function(){
+  alert("你点击了div1");
+},false);
+document.getElementById("p2").addEventListener("click",function(){
+  alert("你点击了p2");
+},true);
+document.getElementById("div2").addEventListener("click",function(){
+  alert("你点击了div2");
+},true);*/
+
+/*var btn11 = document.getElementById("btn1");
+function myFunction(){
+  console.log(123);
 }
-
-
-
+btn11.addEventListener("click",function(){
+   document.getElementById("div1").addEventListener("mousemove",myFunction);
+});
+var  btn22 = document.getElementById("btn2");
+btn22.addEventListener("click",function(){
+   document.getElementById("div1").removeEventListener("mousemove",myFunction);
+ });*/
+var para = document.createElement("p");
+var node = document.createTextNode("这是一个段落");
+para.appendChild(node);
+var div11 = document.getElementById("div1");
+div11.appendChild(para);
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child);
 
 }(window))
