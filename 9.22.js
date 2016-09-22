@@ -1,11 +1,11 @@
 (function() {
 
-    document.getElementById("pp").innerHTML = "蓝色，加粗";
+    // document.getElementById("pp").innerHTML = "蓝色，加粗";
     // document.getElementById("picture1").src= "../nonew/images/aaa.jpg";
-    var btn = document.getElementById("changepicture");
+    // var btn = document.getElementById("changepicture");
     // var img = document.getElementById("picture1");
     // console.log(img);
-    btn.onclick = function() {
+    // btn.onclick = function() {
       /* if (img.src.match("xxx.jpg")) {
             img.src = "../nonew/images/aaa.jpg";
         } else {
@@ -23,7 +23,7 @@
         console.log("a");
     }  */
 
-    
+/*    
 }
  var picture =  document.getElementById("picture1");
      picture.src= "../nonew/images/aaa.jpg";
@@ -43,14 +43,75 @@
     aa.onmousedown = function(){
       aa.style.backgroundColor ="black";
     }
-    console.log(aa);
+    console.log(aa);*/
 
-
+/*
     var point = document.getElementById("inputtext1");
     point.onfocus = function(){
       point.value = "111";
     }
      point.onblur = function(){
       point.value = "222";
-    }
+    }*/
+var textinput1 = document.getElementById("inputtext1");
+textinput1.onfocus = function (){
+  textinput1.style.color ="yellow";
+}
+textinput1.onblur = function (){
+  textinput1.style.color ="blue";
+  textinput1.style.backgroundColor ="green";
+}
+var textinput2 = document.getElementById("inputtext2");
+textinput2.onfocus = function (){
+  textinput2.style.color = "yellow";
+}
+textinput2.onblur = function (){
+  textinput2.style.color ="blue";
+  textinput2.style.backgroundColor ="green";
+}
+var textinput3 = document.getElementById("inputtext3");
+textinput3.onfocus = function (){
+  textinput3.style.color = "yellow";
+}
+textinput3.onblur = function (){
+  textinput3.style.color ="blue";
+  textinput3.style.backgroundColor ="green";
+
+}
+var btn11= document.getElementById("btn1");
+btn11.onclick = function(){
+  alert("姓名："+textinput1.value+"   "+"性别："+textinput2.value+"   "+"年龄"+textinput3.value);
+}
+var btn22 = document.getElementById("btn2");
+btn22.onclick = function(){
+  textinput1.value="";
+  textinput2.value="";
+  textinput3.value="";
+  textinput1.style.backgroundColor="white";
+  textinput2.style.backgroundColor="white";
+  textinput3.style.backgroundColor="white";
+
+}
+var btn = document.getElementById("btn3");
+ 
+btn.addEventListener("click",function(){
+  console.log(123);
+});
+btn.addEventListener("click",function(){
+  console.log(11111);
+});
+var d1 = document.getElementById("div1");
+d1.addEventListener("click", function() {
+            console.log(66666);
+
+
+});
+var btn = document.getElementById("btn3");
+btn.onclick = function(){
+  console.log(789);
+}
+
+
+
+
 }(window))
