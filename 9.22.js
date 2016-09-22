@@ -29,9 +29,28 @@
      picture.src= "../nonew/images/aaa.jpg";
      picture.onmouseover= function(){
       console.log("鼠标放上");
+      document.getElementById("list1").innerText="aaa";
    }
     picture.onmouseout = function(){
-      console.log("鼠标离开")
+      console.log("鼠标离开");
+      document.getElementById("list1").innerText="111";
     }
+    var aa = document.getElementById("div1");
+    aa.onmouseup = function(){
+      aa.style.backgroundColor ="blue";
+    }
+    console.log(aa);
+    aa.onmousedown = function(){
+      aa.style.backgroundColor ="black";
+    }
+    console.log(aa);
 
+
+    var point = document.getElementById("inputtext1");
+    point.onfocus = function(){
+      point.value = "111";
+    }
+     point.onblur = function(){
+      point.value = "222";
+    }
 }(window))
